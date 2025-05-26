@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | どてらぼ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="gif.js"></script> -->
+  <script src="contactpop.js"></script>
+  <script src="mobile.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="icon/logo.png" alt=""></div>
+    <nav>
+      <button class="menu-toggle" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+      <ul class="main-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li class="dropdown">
+            <a href="#">7つの場</a>
+            <ul class="dropdown-menu">
+              <li><a href="01play.html">みんなの遊び場</a></li>
+              <li><a href="02sports.html">スポーツの場</a></li>
+              <li><a href="03events.html">催しの場</a></li>
+              <li><a href="04hobby.html">趣味の場</a></li>
+              <li><a href="05relax.html">憩いの場</a></li>
+              <li><a href="06outdoor.html">アウトドアの場</a></li>
+              <li><a href="07dog.html">犬の遊び場</a></li>
+            </ul>
+          </li>
+        <li><a href="#">実例</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="profile.html">私について</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-form">
+
+      <!-- <h1>お問い合わせ</h1> -->
+      <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTWc8i-vk9fJFF6aSvThGpqd7jEB0rcFM1qDSQvlgFEsTMag/viewform?embedded=true" width="640" height="689" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> -->
+        <!--https://docs.google.com/forms/u/0/d/e/1FAIpQLScTWc8i-vk9fJFF6aSvThGpqd7jEB0rcFM1qDSQvlgFEsTMag/formResponse
+          1176176484　1437459475　1334106880-->
+
+      <p style="text-align: center; margin: 100px auto">
+	ご意見、ご感想などお気軽にお寄せください。
+</p>
+<form 
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScTWc8i-vk9fJFF6aSvThGpqd7jEB0rcFM1qDSQvlgFEsTMag/formResponse"
+      method="POST"
+      
+      class="c-form">
+	<div class="c-form__item">
+		<label class="c-form__label" for="field-name"
+			>名前<span class="c-form__required">必須</span></label
+		>
+		<input
+      name="entry.1176176484"
+			class="c-form__input"
+			id="field-name"
+			placeholder="名前"
+			type="text"
+			required="required"
+		/><br>
+	</div>
+	<div class="c-form__item">
+		<label class="c-form__label" for="field-mail"
+			>メールアドレス</label
+		>
+		<input
+      name="entry.1437459475"
+			class="c-form__input"
+			id="field-mail"
+			placeholder="dote@labo.com"
+			type="email"
+		/><br>
+	</div>
+	<div class="c-form__item">
+		<label class="c-form__label" for="field-message">お問い合わせ内容<span class="c-form__required">必須</span></label>
+		<textarea
+      name="entry.1334106880"
+			class="c-form__input"
+			id="field-message"
+			
+		></textarea>
+    <br>
+	</div>
+	<div class="c-form__submit">
+		<button type="submit" style="text-align: center; margin: 80px auto">送信する</button>
+	</div>
+</form>
+    </section>
+  </main>
+  <div id="thankYouPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="popup-close">&times;</span>
+    <h2>お問い合わせありがとうございます！</h2>
+    <p>内容を確認後、メールアドレスの記載がある場合はご連絡させていただきます。</p>
+    <button class="popup-close popup-ok-button">×</button>
+  </div>
+</div>
+
+  <!-- <footer>
+
+    <p style="position: fixed; bottom:0; margin-top: 2rem;">© 2025 どてらぼ</p>
+  </footer> -->
+</body>
+</html>
