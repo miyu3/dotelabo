@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>どてらぼ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="gif.js"></script>
+  <script src="search.js"></script>
+  <script src="scroll.js"></script>
+  <script src="mobile.js"></script>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="logo"><img src="icon/logo.png" alt=""></div>
+        <nav>
+          <button class="menu-toggle" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+          <ul class="main-menu">
+            <li><a href="index.html">トップ</a></li>
+            <li class="dropdown">
+              <a href="#">7つの場</a>
+              <ul class="dropdown-menu">
+                <li><a href="01play.html">みんなの遊び場</a></li>
+                <li><a href="02sports.html">スポーツの場</a></li>
+                <li><a href="03events.html">催しの場</a></li>
+                <li><a href="04hobby.html">趣味の場</a></li>
+                <li><a href="05relax.html">憩いの場</a></li>
+                <li><a href="06outdoor.html">アウトドアの場</a></li>
+                <li><a href="07dog.html">犬の遊び場</a></li>
+              </ul>
+            </li>
+            <li><a href="#">実例</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="profile.html">私について</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div id="top" class="top-image-container">
+        <img id="top-image" src="01images/01-01.jpeg" alt="トップ画像">
+      </div>
+  <main>
+    <section class="hero">
+      <h1>“どてらぼ” とは？</h1>
+      <p>「どてらぼ」は、河川空間の中で今使われていない<br>
+        ”傾斜空間”の新たな活用を提案するプロジェクトです。</p>
+      <br>
+      <div class="video-responsive">
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qUVpFi0DM1w?si=YciBWqe4nLw-fyiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h1 id="search">どてファニチャーを探す</h1>
+      <div class="search-box">
+      <p1 class="search-box_title">ターゲット：</p1>
+        <label><input type="checkbox" name="target" value=""><span>全員</span></label>
+          <label><input type="checkbox" name="target" value="target1"><span>未就学児</span></label>
+          <label><input type="checkbox" name="target" value="target2"><span>小学生</span></label>
+          <label><input type="checkbox" name="target" value="target3"><span>中高生</span></label>
+          <label><input type="checkbox" name="target" value="target4"><span>学生</span></label>
+          <label><input type="checkbox" name="target" value="target5"><span>ミドル</span></label>
+          <label><input type="checkbox" name="target" value="target6"><span>シニア</span></label><br>
+          <label><input type="checkbox" name="target" value="target7"><span>大人</span></label>
+          <label><input type="checkbox" name="target" value="target8"><span>親子</span></label>
+          <label><input type="checkbox" name="target" value="target9"><span>家族</span></label>
+          <label><input type="checkbox" name="target" value="target10"><span>犬</span></label>
+        </div>
+        <div class="search-box">
+        <p1 class="search-box_title">人数：</p1>
+          <label><input type="checkbox" name="num" value="num1"><span>1人で</span></label>
+          <label><input type="checkbox" name="num" value="num2"><span>2,3人で</span></label>
+          <label><input type="checkbox" name="num" value="num3"><span>みんなで</span></label>
+        </div>
+<div class="search-box">
+<p1 class="search-box_title">タグ：</p1>
+    <label><input type="checkbox" name="category" value=""><span>全て</span></label>
+	<label><input type="checkbox" name="category" value="category1"><span>休む</span></label>
+    <label><input type="checkbox" name="category" value="category2"><span>遊ぶ</span></label>
+    <label><input type="checkbox" name="category" value="category3"><span>盛り上がる</span></label>
+    <label><input type="checkbox" name="category" value="category4"><span>静かに楽しむ</span></label>
+    <label><input type="checkbox" name="category" value="category5"><span>運動する</span></label>
+    <label><input type="checkbox" name="category" value="category6"><span>滞在する</span></label>
+    <label><input type="checkbox" name="category" value="category7"><span>交流する</span></label>
+</div>
+<div class="search-box">
+<p1 class="search-box_title">傾斜角度：</p1>
+    <label><input type="checkbox" name="angle" value=""><span>全て</span></label>
+	<label><input type="checkbox" name="angle" value="angle1"><span>〜10°</span></label>
+    <label><input type="checkbox" name="angle" value="angle2"><span>〜15°</span></label>
+    <label><input type="checkbox" name="angle" value="angle3"><span>〜20°</span></label>
+    <label><input type="checkbox" name="angle" value="angle4"><span>〜25°</span></label>
+    <label><input type="checkbox" name="angle" value="angle5"><span>〜30°</span></label>
+</div>
+<div class="search-box">
+<p1 class="search-box_title">長さ：</p1>
+  <label><input type="checkbox" name="long" value=""><span>全て</span></label>
+	<label><input type="checkbox" name="long" value="long1"><span>〜1m</span></label>
+    <label><input type="checkbox" name="long" value="long2"><span>2〜4m</span></label>
+    <label><input type="checkbox" name="long" value="long3"><span>5〜9m</span></label>
+    <label><input type="checkbox" name="long" value="long4"><span>10〜19m</span></label>
+    <label><input type="checkbox" name="long" value="long5"><span>20m〜</span></label>
+</div>
+<div class="search-box">
+<p1 class="search-box_title">幅：</p1>
+  <label><input type="checkbox" name="wide" value=""><span>全て</span></label>
+	<label><input type="checkbox" name="wide" value="wide1"><span>〜1m</span></label>
+    <label><input type="checkbox" name="wide" value="wide2"><span>2〜4m</span></label>
+    <label><input type="checkbox" name="wide" value="wide3"><span>5〜9m</span></label>
+    <label><input type="checkbox" name="wide" value="wide4"><span>10〜19m</span></label>
+    <label><input type="checkbox" name="wide" value="wide5"><span>20m〜</span></label>
+</div>
+
+<div class="results-grid">
+<div class="result" style="background-image: url('01images/01-01.jpeg');" data-target='["target1","target2"]' data-num='["num3","num1"]' data-category="category2" data-angle='["angle3","angle4","angle5"]' data-long='["long4","long5"]' data-wide='["wide2"]'>
+   <a href="01play.html#01-01">すべり台</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-02.jpeg');" data-target='["target1"]' data-num='["num3","num1"]' data-category="category2" data-angle='["angle4","angle5"]' data-long='["long2"]' data-wide='["wide3","wide4","wide5"]'>
+   <a href="01play.html#01-02">ボルダリング</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-03.jpeg');" data-target='["target1"]' data-num='["num2","num1"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long1"]' data-wide='["wide1"]'>
+   <a href="01play.html#01-03">秘密基地</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-04.jpeg');" data-target='["target1"]' data-num='["num1"]' data-category='["category2","category5"]' data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide4"]'>
+   <a href="01play.html#01-04">キックバイクロード</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-05.jpeg');" data-target='["target1"]' data-num='["num2","num1"]' data-category='["category2","category5"]' data-angle='["angle4","angle5"]' data-long='["long3","long4","long5"]' data-wide='["wide1"]'>
+   <a href="01play.html#01-05">綱登り</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-06.jpeg');" data-target='["target8","target2","target3"]' data-num='["num3"]' data-category='["category2","category3","category7"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long4"]' data-wide='["wide3"]'>
+   <a href="01play.html#01-06">ピンボール</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-07.jpeg');" data-target='["target2","target3"]' data-num='["num1"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long4"]' data-wide='["wide2"]'>
+   <a href="01play.html#01-07">ターザンロープ</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-08.jpeg');" data-target='["target8","target1","target2"]' data-num='["num2","num1"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long2"]' data-wide='["wide2"]'>
+   <a href="01play.html#01-08">輪投げ</a>
+ </div>
+ <div class="result" style="background-image: url('01images/01-09.jpeg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num2","num1"]' data-category='["category2","category1"]' data-angle='["angle1","angle2","angle3"]' data-long='["long3"]' data-wide='["wide3","wide4","wide5"]'>
+   <a href="01play.html#01-09">フワフワドーム</a>
+ </div>
+
+   <div class="result" style="background-image: url('02images/02-01.jpg');" data-target='["target2","target3"]' data-num='["num3"]' data-category='["category2","category5","category3","category7"]' data-angle='["angle1","angle2","angle3"]' data-long='["long4"]' data-wide='["wide5"]'>
+     <a href="02sports.html#02-01">土手サッカー</a>
+   </div>
+   <div class="result" style="background-image: url('02images/02-02.jpg');" data-target='["target2","target3","target4","target5","target6","target7"]' data-num='["num2"]' data-category='["category2","category5","category3","category7"]' data-angle='["angle3","angle4"]' data-long='["long4"]' data-wide='["wide3"]'>
+     <a href="02sports.html#02-02">土手ボウリング</a>
+   </div>
+   <div class="result" style="background-image: url('02images/02-03.jpg');" data-target='["target2","target3","target4","target5","target6","target7"]' data-num='["num1"]' data-category="category5" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long4","long5"]' data-wide='["wide5"]'>
+     <a href="02sports.html#02-03">サイクリングロード</a>
+   </div>
+   <div class="result" style="background-image: url('02images/02-04.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num2","num1"]' data-category='["category5","category3"]' data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long4","long5"]' data-wide='["wide5"]'>
+     <a href="02sports.html#02-04">土手トラック</a>
+   </div>
+   <div class="result" style="background-image: url('02images/02-05.jpg');" data-target='["target3","target4","target5","target6","target7"]' data-num='["num3","num1"]' data-category="category5" data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long2"]' data-wide='["wide1"]'>
+     <a href="02sports.html#02-05">健康遊具</a>
+   </div>
+   <div class="result" style="background-image: url('02images/02-06.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num1"]' data-category="category5" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long4","long5"]' data-wide='["wide2"]'>
+     <a href="02sports.html#02-06">階段</a>
+   </div>
+
+   <div class="result" style="background-image: url('03images/03-01.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9","target5","target6"]' data-num='["num3","num1"]' data-category='["category5","category1","category3","category7"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long1"]' data-wide='["wide1"]'>
+     <a href="03events.html#03-01">丸ステージ</a>
+   </div>
+   <div class="result" style="background-image: url('03images/03-02.jpg');" data-target='["target8","target2"]' data-num='["num3"]' data-category='["category2","category3","category7"]' data-angle='["angle1","angle2","angle3"]' data-long='["long3","long4","long5"]' data-wide='["wide2"]'>
+     <a href="03events.html#03-02">流しそうめん</a>
+   </div>
+   <div class="result" style="background-image: url('03images/03-03.jpg');" data-target='["target8","target1","target2"]' data-num='["num3"]' data-category='["category2","category3","category7"]' data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long3","long4","long5"]' data-wide='["wide3"]'>
+     <a href="03events.html#03-03">カーレース</a>
+   </div>
+   <div class="result" style="background-image: url('03images/03-04.jpg');" data-target='["target8","target1","target2"]' data-num='["num3","num2","num1"]' data-category='["category2","category5","category3"]' data-angle='["angle3","angle4","angle5"]' data-long='["long3","long4","long5"]' data-wide='["wide2"]'>
+     <a href="03events.html#03-04">そり</a>
+   </div>
+
+   <div class="result" style="background-image: url('04images/04-01.jpg');" data-target='["target2","target3","target4","target5","target6","target7"]' data-num='["num1"]' data-category='["category1","category4"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long1"]' data-wide='["wide1"]'>
+     <a href="04hobby.html#04-01">双眼鏡</a>
+   </div>
+   <div class="result" style="background-image: url('04images/04-02.jpg');" data-target='["target2","target3","target4","target5","target6","target7"]' data-num='["num2","num1"]' data-category='["category1","category4"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long1"]' data-wide='["wide1","wide2","wide3","wide4","wide5"]'>
+     <a href="04hobby.html#04-02">自転車スタンド・テーブル</a>
+   </div>
+   <div class="result" style="background-image: url('04images/04-03.jpg');" data-target='["target2","target3","target4","target5","target6","target7"]' data-num='["num1"]' data-category="category5" data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long4","long5"]' data-wide='["wide5"]'>
+     <a href="04hobby.html#04-03">サイクリングロード２</a>
+   </div>
+   <div class="result" style="background-image: url('04images/04-04.jpg');" data-target='["target2","target3","target4","target5","target6","target7"]' data-category="category1" data-angle='["angle1","angle2","angle3"]' data-long='["long1"]' data-wide='["wide2"]'>
+     <a href="04hobby.html#04-04">自転車スタンド</a>
+   </div>
+   <div class="result" style="background-image: url('04images/04-05.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num2"]' data-category='["category1","category4","category7"]' data-angle='["angle1","angle2","angle3"]' data-long='["long2"]' data-wide='["wide3"]'>
+     <a href="04hobby.html#04-05">本棚</a>
+   </div>
+   <div class="result" style="background-image: url('04images/04-06.jpg');" data-target='["target4","target5","target6","target7"]' data-num='["num1"]' data-category="category1" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="04hobby.html#04-06">ワーキングスペース</a>
+   </div>
+   <div class="result" style="background-image: url('04images/04-07.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num1"]' data-category='["category1","category4"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long1"]' data-wide='["wide1"]'>
+     <a href="04hobby.html#04-07">絵描き</a>
+   </div>
+
+   <div class="result" style="background-image: url('05images/05-01.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num1"]' data-category='["category1","category7"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="05relax.html#05-01">テーブル</a>
+   </div>
+   <div class="result" style="background-image: url('05images/05-02.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3"]' data-category='["category1","category7"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="05relax.html#05-02">円形ベンチ</a>
+   </div>
+   <div class="result" style="background-image: url('05images/05-03.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num2"]' data-category='["category1","category7"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long1"]' data-wide='["wide2"]'>
+     <a href="05relax.html#05-03">角ベンチ</a>
+   </div>
+   <div class="result" style="background-image: url('05images/05-04.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num2"]' data-category='["category1","category4"]' data-angle='["angle1","angle2","angle3","angle4","angle5"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="05relax.html#05-04">丸ソファー</a>
+   </div>
+
+   <div class="result" style="background-image: url('06images/06-01.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num2"]' data-category='["category2","category1","category6"]' data-angle='["angle1","angle2","angle3"]' data-long='["long3"]' data-wide='["wide3"]'>
+     <a href="06outdoor.html#06-01">コテージ</a>
+   </div>
+   <div class="result" style="background-image: url('06images/06-02.jpg');" data-target='["target1","target2","target3","target4","target5","target6","target7","target8","target9"]' data-num='["num3","num2"]' data-category='["category1","category6"]' data-angle='["angle1","angle2","angle3"]' data-long='["long3"]' data-wide='["wide3"]'>
+     <a href="06outdoor.html#06-02">テントサイト</a>
+   </div>
+   <div class="result" style="background-image: url('06images/06-03.jpg');" data-target='["target4","target5","target6","target7"]' data-num='["num2"]' data-category="category1" data-angle='["angle1","angle2","angle3"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="06outdoor.html#06-03">BBQサイト</a>
+   </div>
+
+   <div class="result" style="background-image: url('07images/07-01.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide3"]'>
+     <a href="07dog.html#07-01">トンネル1（大）</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-02.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long3"]' data-wide='["wide3"]'>
+     <a href="07dog.html#07-02">トンネル2（小）</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-03.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide3"]'>
+     <a href="07dog.html#07-03">跳び箱1</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-04.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide3"]'>
+     <a href="07dog.html#07-04">ハードル</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-05.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="07dog.html#07-05">リング</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-06.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide1"]'>
+     <a href="07dog.html#07-06">シーソー</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-07.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long1"]' data-wide='["wide2"]'>
+     <a href="07dog.html#07-07">平均台1（まっすぐ）</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-08.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide2"]'>
+     <a href="07dog.html#07-08">平均台2（かく）</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-09.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long2"]' data-wide='["wide1"]'>
+     <a href="07dog.html#07-09">ウィーブコーン</a>
+   </div>
+   <div class="result" style="background-image: url('07images/07-10.jpg');" data-target='["target10"]' data-category="category2" data-angle='["angle1","angle2","angle3","angle4"]' data-long='["long3"]' data-wide='["wide2"]'>
+     <a href="07dog.html#07-10">跳び箱2</a>
+   </div>
+      </section> 
+
+
+
+    <section class="setsumei">
+      <h1>どてらぼのきっかけ</h1>
+      <p>河川空間の中で使われていない傾斜部分を楽しい空間となるように<br>
+        有効活用できないか、という考えから始まりました。</p>
+      <br>
+      <h1>河川空間のオープン化ー国土交通省</h1>
+      <p>国土交通省によって<span>「地域の合意を得ることができれば、
+      <br>民間事業者による営利活動等が可能になる制度」</span>が推進されています。</p>
+      <a href="https://www.mlit.go.jp/river/shinngikai_blog/shigenkentou/dai05/pdf/s02.pdf">国土交通省HP 河川空間のオープン化について</a>
+      <br><br>
+      <h1>先行事例</h1>
+      <p>河川空間のオープン化の制度を利用して、多くの河川空間がすでに活用されています。</p>
+      <br>
+      <div class="zirei">
+      <div class="zirei01">
+        <img src="setsumei_img/01img.png" alt="">
+      <a href="https://www.mlit.go.jp/river/shinngikai_blog/shigenkentou/pdf/jirei_kasenkukan_2208.pdf">河川空間のオープン化活用事例集</a>
+      </div>
+      <br><br>
+      <div class="zirei02">
+        <img src="setsumei_img/02img.png" alt="">
+      <a href="https://www.mlit.go.jp/river/kankyo/main/kankyou/machizukuri/">かわまちづくり</a>
+      </div>
+      <br><br>
+      <div class="zirei03">
+        <img src="setsumei_img/03img.png" alt="">
+      <a href="https://mizbering.jp/wp-content/uploads/MIZBE_A4_final.pdf">ミズベリングスポット2023</a>
+      </div>
+      <p>
+      <br>しかし、どの事例を見ても、<span>傾斜部分は活用されていません。</span>
+      <br>そのため、河川空間における傾斜部分の活用を探ることで、
+      <br>より河川空間に<span>賑わいを創出</span>できると考えています。</p>
+      </div>
+      <br>
+       <h1>河川空間について</h1>
+      <p>河川堤防設計指針の中では原則として３割より緩い勾配と設定されています。
+      <br>しかし、必ずしもこの通りではなく、2割までは許可されています。
+      </p>
+      <br>
+      <div class="koubai"><img src="icon/koubai.png" alt=""></div>
+      <br>
+    </section>
+
+    <section class="features">
+        <h2>河川敷周辺の環境や集まる人に合わせた</h2>
+      　<h3>7  つ  の  場</h3>
+      　<h4>に分けて遊具やファニチャーを提案します</h4>
+        <br>
+        <div class="grid">
+          <div class="card" style="background-image: url('all_img/01button.jpg');"><a href="01play.html">みんなの遊び場</a></div>
+          <div class="card" style="background-image: url('all_img/02button.jpg');"><a href="02sports.html">スポーツの場</a></div>
+          <div class="card" style="background-image: url('all_img/03button.jpg');"><a href="03events.html">催しの場</a></div>
+          <div class="card" style="background-image: url('all_img/04button.jpg');"><a href="04hobby.html">趣味の場</a></div>
+          <div class="card" style="background-image: url('all_img/05button.jpg');"><a href="05relax.html">憩いの場</a></div>
+          <div class="card" style="background-image: url('all_img/06button.jpg');"><a href="06outdoor.html">アウトドアの場</a></div>
+          <div class="card" style="background-image: url('all_img/07button.jpg');"><a href="07dog.html">犬の遊び場</a></div>
+        </div>
+      </section>
+
+      <div class="fix-button">
+        <a id="fade-btn1" href="#search" class="search-btn"><img class="img" src="icon/search.svg" alt=""></a>
+    <a id="fade-btn2" href="#top" class="btn-circle-02"><img class="img" src="icon/top.svg" alt=""></a>
+  </div>
+      
+  </main>
+
+  <footer>
+    <p>© 2025 どてらぼ</p>
+  </footer>
+
+  <script>
+    const imageList = [
+      "01images/01-01.jpeg",
+      "01images/01-02.jpeg",
+      "01images/01-03.jpeg",
+      "01images/01-04.jpeg",
+      "01images/01-05.jpeg",
+      "01images/01-06.jpeg",
+      "01images/01-07.jpeg",
+      "01images/01-08.jpeg",
+      "01images/01-09.jpeg",
+      "02images/02-01.jpg",
+      "02images/02-02.jpg",
+      "02images/02-03.jpg",
+      "02images/02-04.jpg",
+      "02images/02-05.jpg",
+      "02images/02-06.jpg",
+      "03images/03-01.jpg",
+      "03images/03-02.jpg",
+      "03images/03-03.jpg",
+      "03images/03-04.jpg",
+      "04images/04-01.jpg",
+      "04images/04-02.jpg",
+      "04images/04-03.jpg",
+      "04images/04-04.jpg",
+      "04images/04-05.jpg",
+      "04images/04-06.jpg",
+      "04images/04-07.jpg",
+      "05images/05-01.jpg",
+      "05images/05-02.jpg",
+      "05images/05-03.jpg",
+      "05images/05-04.jpg",
+      "06images/06-01.jpg",
+      "06images/06-02.jpg",
+      "06images/06-03.jpg",
+      "07images/07-01.jpg",
+      "07images/07-02.jpg",
+      "07images/07-03.jpg",
+      "07images/07-04.jpg",
+      "07images/07-05.jpg",
+      "07images/07-06.jpg",
+      "07images/07-07.jpg",
+      "07images/07-08.jpg",
+      "07images/07-09.jpg",
+      "07images/07-10.jpg",
+    ];
+  
+    const topImage = document.getElementById("top-image");
+  
+    setInterval(() => {
+      const randomIndex = Math.floor(Math.random() * imageList.length);
+      topImage.style.opacity = 0;
+      setTimeout(() => {
+        topImage.src = imageList[randomIndex];
+        topImage.style.opacity = 1;
+      }, 500);
+    }, 5000);
+  </script>
+  
+</body>
+</html>
