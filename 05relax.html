@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>憩いの場 | どてらぼ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="gif.js"></script>
+  <script src="mobile.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="icon/logo.png" alt=""></div>
+    <nav>
+      <button class="menu-toggle" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+      <ul class="main-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li class="dropdown">
+            <a href="#">7つの場</a>
+            <ul class="dropdown-menu">
+              <li><a href="01play.html">みんなの遊び場</a></li>
+              <li><a href="02sports.html">スポーツの場</a></li>
+              <li><a href="03events.html">催しの場</a></li>
+              <li><a href="04hobby.html">趣味の場</a></li>
+              <li><a href="05relax.html">憩いの場</a></li>
+              <li><a href="06outdoor.html">アウトドアの場</a></li>
+              <li><a href="07dog.html">犬の遊び場</a></li>
+            </ul>
+          </li>
+        <li><a href="#">実例</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="profile.html">私について</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="05-top">憩いの場</h1>
+      <p>カフェやお土産などのお店と併設することを想定し、
+      <br>皆で囲めるようなテーブルやベンチなどを提案します。
+</p>
+    </section>
+    <section class="furniture-detail">
+        <h2 id="05-01">テーブル</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>食事や作業、休憩など多目的に使えるテーブルです。傾斜を椅子代わりにゆったりと過ごせます。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="keyword">休む</li>
+          <!-- <li class="angle">〜30°</li> -->
+          <li  class="length">2m</li>
+          <li class="width">2m</li>
+          <li class="difficulty">★★★</li>
+          <!-- <li>期間：1日〜1週間</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img src="05images/05-01.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="05-02">円形ベンチ</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>円形に配置されたベンチで、みんなと向き合って座れます。会話が自然と生まれる楽しい空間です。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="target">家族</li>
+          <li class="keyword">休む</li>
+          <!-- <li class="angle">〜30°</li> -->
+          <li  class="length">2m</li>
+          <li class="width">2m</li>
+          <li class="difficulty">★★★</li>
+          <!-- <li>期間：1日〜1週間</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img src="05images/05-02.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="05-03">角ベンチ</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>角の形をしたベンチで、複数人で座れるデザインです。景色を眺めたり、ちょっとした休憩にも便利です。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="keyword">休む</li>
+          <li class="keyword">映画鑑賞</li>
+          <!-- <li class="angle">〜30°</li> -->
+          <li  class="length">1m</li>
+          <li class="width">2m</li>
+          <li class="difficulty">★★★</li>
+          <!-- <li>期間：1日〜1週間</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img src="05images/05-03.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="05-04">丸ソファー</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>やわらかい素材でできた、丸い形のくつろぎソファーです。座ったり寝転んだり、自由に過ごせます。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="keyword">休む</li>
+          <!-- <li class="angle">〜30°</li> -->
+          <li  class="length">2m</li>
+          <li class="width">2m</li>
+          <!-- <li class="difficulty">★★★</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img src="05images/05-04.jpg" alt="">
+      </div>
+    </section>
+    <div class="fix-button">
+    <button class="btn-circle-01" popovertarget="Modal" popovertargetaction="toggle"><img class="img" src="icon/info.svg" alt=""></button>
+    <div id="Modal" popover="auto">
+    <div class="inner-modal">
+      <!-- <button class="Close" popovertarget="Modal" popovertargetaction="hidden">×</button>  -->
+      <p class="text">
+        <img class="infoicon" src="icon/hito.svg" alt="">: ターゲット
+        <br><img class="infoicon" src="icon/hito.svg" alt="">: 人数
+        <br><img class="infoicon" src="icon/coment.svg" alt="">: キーワード
+        <br><img class="infoicon" src="icon/angle.svg" alt="">: 勾配角度
+        <br><img class="infoicon" src="icon/long.svg" alt="">: 長さ
+        <br><img class="infoicon" src="icon/wide.svg" alt="">: 幅
+        <br><img class="infoicon" src="icon/difficult.svg" alt="">: 設置難易度
+      </p>
+    </div>
+  </div>
+    <a href="#05-top" class="btn-circle-02"><img class="img" src="icon/top.svg" alt=""></a>
+  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 どてらぼ</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アウトドアの場 | どてらぼ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="gif.js"></script>
+  <script src="mobile.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="icon/logo.png" alt=""></div>
+    <nav>
+      <button class="menu-toggle" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+      <ul class="main-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li class="dropdown">
+            <a href="#">7つの場</a>
+            <ul class="dropdown-menu">
+              <li><a href="01play.html">みんなの遊び場</a></li>
+              <li><a href="02sports.html">スポーツの場</a></li>
+              <li><a href="03events.html">催しの場</a></li>
+              <li><a href="04hobby.html">趣味の場</a></li>
+              <li><a href="05relax.html">憩いの場</a></li>
+              <li><a href="06outdoor.html">アウトドアの場</a></li>
+              <li><a href="07dog.html">犬の遊び場</a></li>
+            </ul>
+          </li>
+        <li><a href="#">実例</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="profile.html">私について</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="06-top">アウトドアの場</h1>
+      <p>傾斜を活用することで、タープのいらないテントサイトや
+        <br>非日常感溢れるコテージなどを楽しむことができる空間です。
+      </p>
+    </section>
+
+    <section class="furniture-detail">
+        <h2 id="06-01">コテージ</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>木でできた小さな宿泊施設です。中にはすべり台があり、傾斜を有効活用しています。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="target">家族</li>
+          <li class="keyword">泊まる</li>
+          <li class="angle">〜20°</li>
+          <li  class="length">5m</li>
+          <li class="width">5m</li>
+          <li class="difficulty">★★★★★</li>
+          <!-- <li>期間：1ヶ月〜</li> -->
+          <br>
+        </ul>
+      </div>
+       <div class="photo">
+      <img id="cottage-img" src="06images/06-01.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="06-02">テントサイト</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>テントを張ってキャンプができるスペースです。テントの下のデッドスペースがタープ代わりになります。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="target">家族</li>
+          <li class="keyword">泊まる</li>
+          <li class="angle">〜20°</li>
+          <li  class="length">5m</li>
+          <li class="width">5m</li>
+          <li class="difficulty">★★★</li>
+          <!-- <li>期間：1ヶ月〜</li> -->
+          <br>
+        </ul>
+      </div>
+       <div class="photo">
+      <img src="06images/06-02.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="06-03">BBQサイト</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>座りながら2人で囲めるBBQサイトです。夫婦やカップル、友達同士におすすめです。</p>
+        <ul>
+          <li class="target">大人</li>
+          <li class="keyword">夫婦</li>
+          <li class="keyword">カップル</li>
+          <li class="keyword">友達</li>
+          <li class="angle">〜20°</li>
+          <li  class="length">2m</li>
+          <li class="width">2m</li>
+          <li class="difficulty">★</li>
+          <!-- <li>期間：1日〜</li> -->
+          <br>
+        </ul>
+      </div>
+       <div class="photo">
+      <img src="06images/06-03.jpg" alt="">
+      </div>
+    </section>
+    <div class="fix-button">
+    <button class="btn-circle-01" popovertarget="Modal" popovertargetaction="toggle"><img class="img" src="icon/info.svg" alt=""></button>
+    <div id="Modal" popover="auto">
+    <div class="inner-modal">
+      <!-- <button class="Close" popovertarget="Modal" popovertargetaction="hidden">×</button>  -->
+      <p class="text">
+        <img class="infoicon" src="icon/hito.svg" alt="">: ターゲット
+        <br><img class="infoicon" src="icon/hito.svg" alt="">: 人数
+        <br><img class="infoicon" src="icon/coment.svg" alt="">: キーワード
+        <br><img class="infoicon" src="icon/angle.svg" alt="">: 勾配角度
+        <br><img class="infoicon" src="icon/long.svg" alt="">: 長さ
+        <br><img class="infoicon" src="icon/wide.svg" alt="">: 幅
+        <br><img class="infoicon" src="icon/difficult.svg" alt="">: 設置難易度
+      </p>
+    </div>
+  </div>
+    <a href="#06-top" class="btn-circle-02"><img class="img" src="icon/top.svg" alt=""></a>
+  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 どてらぼ</p>
+  </footer>
+</body>
+</html>

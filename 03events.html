@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="icon/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>催しの場 | どてらぼ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="gif.js"></script>
+  <script src="mobile.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="icon/logo.png" alt=""></div>
+    <nav>
+      <button class="menu-toggle" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+          </button>
+      <ul class="main-menu">
+        <li><a href="index.html">トップ</a></li>
+        <li class="dropdown">
+            <a href="#">7つの場</a>
+            <ul class="dropdown-menu">
+              <li><a href="01play.html">みんなの遊び場</a></li>
+              <li><a href="02sports.html">スポーツの場</a></li>
+              <li><a href="03events.html">催しの場</a></li>
+              <li><a href="04hobby.html">趣味の場</a></li>
+              <li><a href="05relax.html">憩いの場</a></li>
+              <li><a href="06outdoor.html">アウトドアの場</a></li>
+              <li><a href="07dog.html">犬の遊び場</a></li>
+            </ul>
+          </li>
+        <li><a href="#">実例</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="profile.html">私について</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 id="03-top">催しの場</h1>
+      <p>イベントやお祭り、マーケットなど、地域の人々が集う活気ある空間です。</p>
+    </section>
+
+    <section class="furniture-detail">
+        <h2 id="03-01">丸ステージ</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>みんなが集まって発表できる円形のステージです。展示や演奏、体操など、自由な表現が広がります。</p>
+        <ul>
+          <li class="target">全員</li>
+          <li class="keyword">体操</li>
+          <li class="keyword">展示</li>
+          <li class="keyword">演奏</li>
+          <!-- <li class="angle">〜30°</li> -->
+          <li  class="length">1m(1個)</li>
+          <li class="width">1m(1個)</li>
+          <li class="difficulty">★★★</li>
+          <!-- <li>期間：</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img src="03images/03-01.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="03-02">流しそうめん</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>竹を組んで水を流し、そうめんをキャッチして食べる夏の遊びです。自然の中で涼しさと楽しさを味わえます。</p>
+        <ul>
+          <li class="target">小学生</li>
+          <li class="target">親子</li>
+          <li class="angle">〜20°</li>
+          <li  class="length">5m〜</li>
+          <li class="width">3m</li>
+          <li class="difficulty">★★</li>
+          <!-- <li>期間：1日</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img src="03images/03-02.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="03-03">カーレース</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>傾斜を使ってミニカーを走らせる遊びです。スピードやコース取りを工夫して、何度でも楽しめます。</p>
+        <ul>
+          <li class="target">親子</li>
+          <li class="target">未就学児</li>
+          <li class="target">小学生</li>
+          <li class="angle">〜25°</li>
+          <li  class="length">5m〜</li>
+          <li class="width">5m</li>
+          <li class="difficulty">★★</li>
+          <!-- <li>期間：1〜2日</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img id="carrace-img" src="03images/03-03.jpg" alt="">
+      </div>
+    </section>
+    
+    <section class="furniture-detail">
+        <h2 id="03-04">そり</h2>
+        <div class="furniture-text">
+          <div class="text">
+        <p>土手の斜面をそりで滑り降りる冬の遊びです。スリルとスピード感があり、何度でも滑りたくなります。</p>
+        <ul>
+          <li class="target">親子</li>
+          <li class="target">未就学児</li>
+          <li class="target">小学生</li>
+          <li class="keyword">遊ぶ</li>
+          <li class="angle">20〜30°</li>
+          <li  class="length">5m〜</li>
+          <li class="width">2m</li>
+          <li class="difficulty">★</li>
+          <!-- <li>期間：</li> -->
+          <br>
+        </ul>
+      </div>
+      <div class="photo">
+      <img id="sori-img" src="03images/03-04.jpg" alt="">
+      </div>
+    </section>
+    <div class="fix-button">
+    <button class="btn-circle-01" popovertarget="Modal" popovertargetaction="toggle"><img class="img" src="icon/info.svg" alt=""></button>
+    <div id="Modal" popover="auto">
+    <div class="inner-modal">
+      <!-- <button class="Close" popovertarget="Modal" popovertargetaction="hidden">×</button>  -->
+      <p class="text">
+        <img class="infoicon" src="icon/hito.svg" alt="">: ターゲット
+        <br><img class="infoicon" src="icon/hito.svg" alt="">: 人数
+        <br><img class="infoicon" src="icon/coment.svg" alt="">: キーワード
+        <br><img class="infoicon" src="icon/angle.svg" alt="">: 勾配角度
+        <br><img class="infoicon" src="icon/long.svg" alt="">: 長さ
+        <br><img class="infoicon" src="icon/wide.svg" alt="">: 幅
+        <br><img class="infoicon" src="icon/difficult.svg" alt="">: 設置難易度
+      </p>
+    </div>
+  </div>
+    <a href="#03-top" class="btn-circle-02"><img class="img" src="icon/top.svg" alt=""></a>
+  </div>
+  </main>
+
+  <footer>
+    <p>© 2025 どてらぼ</p>
+  </footer>
+</body>
+</html>
