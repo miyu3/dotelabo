@@ -1,3 +1,9 @@
+  @font-face { 
+  /* ① ここにfont-familyで指定したい名前を書く*/
+  font-family: "craftmincho"; 
+
+  /* フォントが置かれているパスを書く */ 
+  src: url("/assets/craftmincho/craftmincho.otf") format("truetype") }
 body {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   margin: 0;
@@ -621,13 +627,7 @@ textarea.c-form__input {
     transition: opacity 1s ease-in-out;
     display: block;
   }
-  
-  @font-face { 
-  /* ① ここにfont-familyで指定したい名前を書く*/
-  font-family: "craftmincho"; 
 
-  /* フォントが置かれているパスを書く */ 
-  src: url("/assets/craftmincho/craftmincho.otf") format("truetype") }
 
 /* 絞り込み検索　*/
 
