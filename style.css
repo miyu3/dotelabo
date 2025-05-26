@@ -3,7 +3,9 @@
   font-family: "craftmincho"; 
 
   /* フォントが置かれているパスを書く */ 
-  src: url("/assets/craftmincho/craftmincho.otf") format("truetype") }
+  src: url('./assets/craftmincho/craftmincho.woff2') format('woff2'),
+       url('./assets/craftmincho/craftmincho.woff') format('woff'),
+	  url("/assets/craftmincho/craftmincho.otf") format("truetype") }
 body {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   margin: 0;
