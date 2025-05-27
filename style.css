@@ -63,7 +63,7 @@ html {
   .video-responsive {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 のアスペクト比 (高さ / 幅 = 9 / 16 = 0.5625) */
-  height: 0;
+  height: 50vh;
   overflow: hidden; /* はみ出すコンテンツを隠す */
   max-width: 100%; /* 親要素の幅を超えないようにする */
   width: 75%;
