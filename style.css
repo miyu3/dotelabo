@@ -1,11 +1,10 @@
-  @font-face { 
+ @font-face { 
   /* ① ここにfont-familyで指定したい名前を書く*/
   font-family: "craftmincho"; 
 
   /* フォントが置かれているパスを書く */ 
-  src: url('./assets/craftmincho/craftmincho.woff2') format('woff2'),
-       url('./assets/craftmincho/craftmincho.woff') format('woff'),
-	  url("/assets/craftmincho/craftmincho.otf") format("truetype") }
+  src: url("/assets/craftmincho/craftmincho.otf") format("truetype") }
+
 body {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   margin: 0;
@@ -918,6 +917,24 @@ label input[type="checkbox"]:checked + span {
     align-items: center;
   }
 
+  /* .hero h1 のスタイル */
+  .hero h1 {
+    font-size: 5.5vw; /* 読みやすさを考慮しつつ、必要に応じて調整 */
+  }
+  .hero p br{
+    display: none;
+  }
+
+  /* もし .setsumei h1 も同様に調整したい場合 */
+  .setsumei h1 {
+    font-size: 5.5vw; /* 読みやすさを考慮しつつ、必要に応じて調整 */
+    line-height: 7vw;
+  }
+  .setsumei p br{
+    display: none;
+  }
+
+
   /* ハンバーガーメニューアイコン (必要に応じてHTMLにボタンを追加) */
   .menu-toggle {
     display: block; /* ハンバーガーメニューアイコンを表示 */
@@ -1025,13 +1042,10 @@ label input[type="checkbox"]:checked + span {
     padding: 2rem;
   }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
-
   .hero p {
     font-size: 0.9rem;
   }
+
 
   /* 検索フィルター */
   .search-filters {
@@ -1107,7 +1121,8 @@ label input[type="checkbox"]:checked + span {
 
   /* 「どてらぼのきっかけ」セクション (.setsumei) */
   .setsumei {
-    padding: 2rem 1rem;
+    padding: 2rem 2.5rem;
+    text-align: left;
   }
 
   .setsumei h2 {
@@ -1117,6 +1132,10 @@ label input[type="checkbox"]:checked + span {
   .setsumei .zirei {
     width: 100%; /* 幅を100%にする */
     margin-bottom: 1rem;
+  }
+
+  .setsumei .koubai img{
+    width: 90%;
   }
 
   /* 「7つの場」セクション (.features) */
