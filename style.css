@@ -160,8 +160,8 @@ html {
       flex-direction: column;
     }
     .video-responsive {
-    width: 90%; /* ★モバイル版の動画の最大幅を90%に設定 */
-    /* モバイルでは画面いっぱいにしたい場合、100%にすることも可能です */
+    width: 90%; 
+    height: 50%;
   }
   }
 
